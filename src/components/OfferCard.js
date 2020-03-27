@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const CardWrapper = styled.div`
     display: flex;
@@ -31,8 +32,8 @@ const CardWrapper = styled.div`
 
 const OfferCard = (props) => (
     <CardWrapper>
-        <img src={props.image} />
-        <h2>{props.title}</h2>
+        <Link to={props.link}><img src={props.image} /></Link>
+        <Link to={props.link}><h2>{props.title}</h2></Link>
         <p>{props.children}</p>
     </CardWrapper>
 )

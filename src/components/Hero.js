@@ -44,23 +44,25 @@ const ImageWrapper = styled.div`
 
 const ElementsWrapper = styled.div`
   align-items: center;
-
+  flex-direction: column;
   @media(min-width: 992px) {
     min-height: 600px;
+    flex-direction: row;
+
   }
 `;
 
 const float = keyframes`
   0% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 
   50% {
-    transform: translateY(20px);
+    transform: translate(-50%, 20px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 `;
 
@@ -68,11 +70,10 @@ const ArrowDown = styled.img`
   position: absolute;
   bottom: -30px;
   left: 50%;
-  transform: translateX(-50%);
   width: 40px;
   animation: ${float} 1.5s linear infinite;
-  display: none;
-
+  display: none;  
+  
   @media(min-width: 992px) {
     display: block;
   }
