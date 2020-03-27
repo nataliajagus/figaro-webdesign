@@ -41,7 +41,12 @@ const GlobalStyle = createGlobalStyle `
     }
 
     a {
-        text-decoration:none;
+        text-decoration: none;
+        transition: 0.2s ease-in color;
+
+        &:hover {
+            color: #3658A4;
+        }
     }
 
     h1, h2, h3, h4, h5 {
@@ -59,6 +64,7 @@ const GlobalStyle = createGlobalStyle `
     p {
         font-size: 0.8rem;
         line-height: 1.2rem;
+        color: #393939;
     }
 
     section {
@@ -72,6 +78,10 @@ const GlobalStyle = createGlobalStyle `
     @media (min-width: 992px) {
         .w-50 {
             width: 50%;
+        }
+
+        .w-25 {
+            width: 25%;
         }
     }
 

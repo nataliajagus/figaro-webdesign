@@ -13,6 +13,7 @@ const Button = styled(Link)`
 
     &:hover {
         transform: translateX(8px);
+        color: #fff;
     }
 `;
 

@@ -6,6 +6,7 @@ import MobileMenu from "../components/MobileMenu";
 import styled from "styled-components";
 import Logo from '../assets/images/logo.svg';
 import IndexBgTop from '../assets/images/index-menu-bg.svg';
+import Footer from "../components/Footer";
 
 const PageWrapper = styled.div`
     overflow-x: hidden;
@@ -74,6 +75,7 @@ const TopBg = styled.img`
 `;
 
 
+
 const IndexLayout = ({children, data}) => (
     <PageWrapper>  
         <GlobalStyle />
@@ -93,6 +95,7 @@ const IndexLayout = ({children, data}) => (
         <TopBg src={IndexBgTop}  />
         {children}
         <Lines />
+        <Footer />
     </PageWrapper>
 )
 

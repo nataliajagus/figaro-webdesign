@@ -48,7 +48,6 @@ const ElementsWrapper = styled.div`
   @media(min-width: 992px) {
     min-height: 600px;
     flex-direction: row;
-
   }
 `;
 
