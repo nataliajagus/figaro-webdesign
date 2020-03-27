@@ -4,12 +4,18 @@ import Banner from "../assets/images/home-banner.svg";
 import Arrow from "../assets/images/arrow-down.svg";
 import styled, { keyframes } from "styled-components"
 import Button from "../components/Button";
+import { slideInRight } from 'react-animations';
+import { slideInLeft } from 'react-animations';
+
+const slideInAnimation = keyframes`${slideInRight}`;
+const slideInLeftAnimation = keyframes`${slideInLeft}`;
 
 const HeroWrapper = styled.div`
   position: relative;
 `;
 
 const TextWrapper = styled.div`
+  animation: 1s ${slideInLeftAnimation};
   span {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -31,6 +37,7 @@ const TextWrapper = styled.div`
 const ImageWrapper = styled.div`
   img {
     width: 100%;
+    animation: 1s ${slideInAnimation};
   }
 
   @media(min-width: 992px) {

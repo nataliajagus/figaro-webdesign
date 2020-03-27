@@ -1,7 +1,11 @@
 import React from "react";
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import LeftBg from "../assets/images/bg-left.svg";
 import MobileImg from "../assets/images/mobile.svg";
+import { slideInLeft } from 'react-animations';
+import Zoom from 'react-reveal/Zoom';
+
+const slideInAnimation = keyframes`${slideInLeft}`;
 
 const SectionWrapper = styled.section`
   background-image:  url(${LeftBg});
@@ -12,6 +16,7 @@ const SectionWrapper = styled.section`
   img {
     max-width: 550px;
     width: 100%;
+    animation: 1s ${slideInAnimation};
   }
 
   h3 {
@@ -39,7 +44,9 @@ const MobileSection = () => (
       <div className="container">
         <div className="row">
           <div className="w-50">
+            <Zoom>
             <img src={MobileImg} />
+            </Zoom>
           </div>
           <div className="w-50">
             <h3>Mobilne strony internetowe</h3>

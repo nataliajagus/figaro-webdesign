@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components"
 import RightBg from "../assets/images/bg-right.svg";
 import SecurityImg from "../assets/images/security.svg";
+import Zoom from 'react-reveal/Zoom';
+
 
 const SectionWrapper = styled.section`
   background-image:  url(${RightBg});
@@ -58,7 +60,9 @@ const SecuritySection = () => (
             <p>Dodatkowo do każdej realizowanej strony instalujemy certyfikat SSL, który szyfruje połączenie i pozwala użytkownikom na bezpieczne korzystanie z witryny. Taki certyfikat wpływa też pozytywnie na wyświetlanie się Twojej strony w wynikach Google.</p>
           </div>
           <div className="w-50">
-            <img src={SecurityImg} />
+            <Zoom>
+              <img src={SecurityImg} />
+            </Zoom>
           </div>
         </div>
       </div>
