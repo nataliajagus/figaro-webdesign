@@ -7,8 +7,13 @@ const Button = styled(Link)`
     border-radius: 20px;
     color: #fff;
     font-weight:  bold;
-    font-size:  ${({ small }) => (small ? '18px' : '24px')};
+    font-size: ${props => props.big ? "1rem" : "0.7rem"};
     padding: 5px 20px;
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+        transform: translateX(8px);
+    }
 `;
 
 

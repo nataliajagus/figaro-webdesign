@@ -7,8 +7,13 @@ import styled from "styled-components";
 import Logo from '../assets/images/logo.svg';
 import IndexBgTop from '../assets/images/index-menu-bg.svg';
 
+const PageWrapper = styled.div`
+    overflow-x: hidden;
+    margin-top: 50px;
+`;
+
 const MobileMenuBefore = styled.div`
-    position: absolute;
+    position: fixed;
     border-radius: 0 0 0 100px;
      -moz-border-radius: 0 0 0 100px;
      -webkit-border-radius: 0 0 0 100px;
@@ -18,6 +23,7 @@ const MobileMenuBefore = styled.div`
     width: 106px;
     top: 0px;
     right: 0px;
+    z-index: 2;
 
     @media (min-width: 992px) {
         display: none;
@@ -49,18 +55,27 @@ const DesktopMenuWrapper = styled.div`
 const TopBg = styled.img`
     display: none;
     position: absolute;
-    top: -700px;
-    right: -900px;
+    top: -53rem;
+    right: -46rem;
     z-index: -1;
 
     @media(min-width: 992px) {
         display: block;
     }
+
+    @media (min-width:1200px) {
+        right: -33rem;
+    }   
+
+    @media (min-width: 1400px) {
+        right: -36rem;
+        top: -40rem;
+    }
 `;
 
 
 const IndexLayout = ({children, data}) => (
-    <>  
+    <PageWrapper>  
         <GlobalStyle />
         
         <MobileMenuBefore />
@@ -78,7 +93,7 @@ const IndexLayout = ({children, data}) => (
         <TopBg src={IndexBgTop}  />
         {children}
         <Lines />
-    </>
+    </PageWrapper>
 )
 
 

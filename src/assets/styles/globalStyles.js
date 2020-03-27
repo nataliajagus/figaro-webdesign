@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle `
     html {
         box-sizing: border-box;
         font-size: 16px;
+        overflow-x: hidden;
     
         @media screen and (min-width: 992px) {
             font-size: 18px;
@@ -43,10 +44,29 @@ const GlobalStyle = createGlobalStyle `
         text-decoration:none;
     }
 
-    h1 {
-        font-size: 3.438rem;
+    h1, h2, h3, h4, h5 {
         color: #3658A4;
+    }
 
+    h1 {
+        font-size: 3rem;
+
+        @media(min-width:992px) {
+            font-size: 3.438rem;
+        }
+    }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    section {
+        padding: 50px 0;
+
+        @media(min-width: 992px) {
+            padding: 150px 0;
+        }
     }
 
     @media (min-width: 992px) {
@@ -58,10 +78,26 @@ const GlobalStyle = createGlobalStyle `
     .container {
         padding: 30px;
 
-        @media(min-width:1200px) {
-            max-width: 1140px;
-            margin: 0 auto;
+        @media(min-width:768px) {
+            padding: 50px;
+        }
+
+        @media(min-width: 992px) {
+            padding: 0 10%;
+        }
+
+        @media(min-width: 2400px) {
+            padding: 0 20%;
+        }
     }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+
+        @media(min-width: 992px) {
+            flex-direction: row;
+        }
     }
    
 

@@ -63,7 +63,7 @@ const MenuList = styled.ul`
 `;
 
 const MenuItem = styled.li`
-  margin: 40px 20px;
+  margin: 60px 0px;
 `;
 
 const MenuLink = styled(Link)`
@@ -107,9 +107,8 @@ class MobileMenu extends React.Component {
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/oferta">oferta</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/realizacje">realizacje</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/co-wiedziec">pytania</MenuLink></MenuItem>
-            <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/proces">proces</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/kontakt">kontakt</MenuLink></MenuItem>
-            <Button small="true" to="/">wycena</Button>
+            <Button big to="/">wycena</Button>
         </MenuList>
       </Menu>
     );
