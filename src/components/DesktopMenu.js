@@ -34,7 +34,7 @@ const DesktopMenu = ({ isIndexPage }) => (
             <MenuItem><MenuLink to="/">home</MenuLink></MenuItem>
             <MenuItem><MenuLink to="/oferta">oferta</MenuLink></MenuItem>
             <MenuItem><MenuLink to="/realizacje">realizacje</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/pytania">pytania</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/proces">proces</MenuLink></MenuItem>
             <MenuItem><MenuLink to="/kontakt">kontakt</MenuLink></MenuItem>
             <Button small to="/">wycena</Button>
         </MenuList>

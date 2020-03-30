@@ -43,6 +43,24 @@ const DesktopMenuBefore = styled.div`
 
     @media(min-width: 992px) {
         display: block;
+        right: -150px;
+        width: 800px;
+    }
+
+
+    @media(min-width: 1200px) {
+        right: -84px;
+        width: 800px;
+    }
+
+    @media(min-width: 1600px) {
+        right: -84px;
+        width: 900px;
+    }
+
+    @media(min-width: 2400px) {
+        right: -84px;
+        width: 1200px;
     }
 `;
 

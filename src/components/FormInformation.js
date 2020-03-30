@@ -9,6 +9,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
 `;
 
 const FormInformation = () => (
