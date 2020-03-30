@@ -29,40 +29,32 @@ const MobileMenuBefore = styled.div`
     }
 `;
 
-
-
-const TopBg = styled.img`
-    display: none;
+const DesktopMenuBefore = styled.div`
+    border-radius: 119px;
+    background: rgb(81,183,148);
+    background: linear-gradient(330deg,rgba(81,183,148,1) 0%,rgba(80,239,183,1) 100%);
+    height: 146px;
+    width: 800px;
     position: absolute;
-    top: -53rem;
-    right: -46rem;
+    top: -50px;
+    right: -84px;
     z-index: -1;
+    display: none;
 
     @media(min-width: 992px) {
         display: block;
     }
-
-    @media (min-width:1200px) {
-        right: -33rem;
-    }   
-
-    @media (min-width: 1400px) {
-        right: -36rem;
-        top: -40rem;
-    }
 `;
 
 
-
-const IndexLayout = ({children}) => (
+const PageLayout = ({children}) => (
     <PageWrapper>  
         <GlobalStyle />
-        
         <MobileMenuBefore />
+        <DesktopMenuBefore />
         <div className="container">
             <Header />
         </div>  
-        <TopBg src={IndexBgTop}  />
         {children}
         <Lines />
         <Footer />
@@ -70,4 +62,4 @@ const IndexLayout = ({children}) => (
 )
 
 
-export default IndexLayout;
+export default PageLayout;

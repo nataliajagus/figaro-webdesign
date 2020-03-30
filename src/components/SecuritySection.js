@@ -56,7 +56,7 @@ const SecuritySection = () => (
         <div className="row">
           <div className="w-50">
             <h3>Nowoczesne i bezpieczne</h3>
-            <p>Strony internetowe projektujemy zgodnie z najnowszymi trendami. Każda sekcja i element jest dokładnie przemyślany, tak żeby Twoja strona wyglądała profesjonalnie i wzmacniała pozycję Twojej firmy na rynku. .</p>
+            <p>Strony internetowe projektujemy zgodnie z najnowszymi trendami. Każda sekcja i element jest dokładnie przemyślany, tak żeby Twoja strona wyglądała profesjonalnie i wzmacniała pozycję Twojej firmy na rynku.</p>
             <p>Dodatkowo do każdej realizowanej strony instalujemy certyfikat SSL, który szyfruje połączenie i pozwala użytkownikom na bezpieczne korzystanie z witryny. Taki certyfikat wpływa też pozytywnie na wyświetlanie się Twojej strony w wynikach Google.</p>
           </div>
           <div className="w-50">

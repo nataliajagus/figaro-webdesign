@@ -6,19 +6,17 @@ import Hero from "../components/Hero"
 import MobileSection from "../components/MobileSection";
 import SecuritySection from "../components/SecuritySection";
 import OfferSection from "../components/OfferSection";
-
-
-
+import IndexLayout from "../layouts/index";
 
 
 const IndexPage = ({data}) => (
-  <>
+  <IndexLayout>
   <SEO title="Home" />
     <Hero />
     <OfferSection />
     <MobileSection />
     <SecuritySection />
-  </>
+  </IndexLayout>
 )
 
 

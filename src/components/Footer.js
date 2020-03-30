@@ -7,7 +7,8 @@ import ContactInfo from "../components/ContactInfo";
 const FooterWrapper = styled.footer`
     padding: 30px 0;
     background: #EEEEEE;
-
+    bottom: 0;
+    width: 100%;
     ul {
         list-style-type: none;
     }
@@ -79,8 +80,8 @@ const Footer = () => (
                     <nav>
                         <ul>
                             <li><Link to="/">Wycena</Link></li>
-                            <li><Link to="/">Realizacje</Link></li>
-                            <li><Link to="/">Pytania</Link></li>
+                            <li><Link to="/realizacje">Realizacje</Link></li>
+                            <li><Link to="/pytania">Pytania</Link></li>
                             <li><Link to="/">Proces</Link></li>
                         </ul>
                     </nav>

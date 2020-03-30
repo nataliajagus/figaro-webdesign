@@ -106,7 +106,7 @@ class MobileMenu extends React.Component {
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/">home</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/oferta">oferta</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/realizacje">realizacje</MenuLink></MenuItem>
-            <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/co-wiedziec">pytania</MenuLink></MenuItem>
+            <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/pytania">pytania</MenuLink></MenuItem>
             <MenuItem><MenuLink onClick={() => this.closeMenu()} to="/kontakt">kontakt</MenuLink></MenuItem>
             <Button big to="/">wycena</Button>
         </MenuList>

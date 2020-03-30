@@ -51,10 +51,10 @@ const ImageWrapper = styled.div`
 
 const ElementsWrapper = styled.div`
   align-items: center;
-  flex-direction: column;
+  flex-direction: column !important;
   @media(min-width: 992px) {
     min-height: 600px;
-    flex-direction: row;
+    flex-direction: row !important;
   }
 `;
 

@@ -18,6 +18,11 @@ const CardWrapper = styled.div`
     img {
         margin-bottom: 30px;
         max-height: 100px;
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     h2 {

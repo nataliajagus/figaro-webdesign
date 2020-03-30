@@ -13,6 +13,11 @@ const OfferCardsWrapper = styled.div`
   @media(min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  @media(min-width: 992px) {
+    margin-top: 0px;
   }
 `;
 
@@ -21,7 +26,7 @@ const OfferSection = () => (
       <div className="container">
       <OfferCardsWrapper>
         <OfferCard title="Strony wizytówki" image={WebsiteImg}>
-          Strony internetowe z systemem zarządzania treścią, dzięki któremu możesz sam edytować zawartość swojej strony, rozbudowywać ją, dodawać zdjęcia do galerii, czy prowadzić aktualności.
+          Profesjonalne strony firmowe lub osobiste. Indywidualny, nowoczesny projekt graficzny, wersja na komputery, telefony i tablety. Prezentacja Twojej firmy i najważniejsze informacje na jej temat.
         </OfferCard>
         <OfferCard title="Strony z CMS" image={WebsiteEditImg}>
           Strony internetowe z systemem zarządzania treścią, dzięki któremu możesz sam edytować zawartość swojej strony, rozbudowywać ją, dodawać zdjęcia do galerii, czy prowadzić aktualności.
