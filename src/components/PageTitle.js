@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const Wrapper = styled.div`
     padding: 50px 0;
@@ -25,8 +27,12 @@ const Subtitle = styled.p`
 const PageTitle = (props) => (
     <Wrapper> 
         <div className="container">
+            <Zoom>
             <Heading>{props.title}</Heading>
+            </Zoom>
+            <Fade bottom>
             <Subtitle>{props.children}</Subtitle>
+            </Fade>
         </div>       
     </Wrapper>
 )

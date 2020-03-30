@@ -12,6 +12,8 @@ import Button from "../components/Button"
 import { Link } from "gatsby";
 import RightBg from "../assets/images/pg-bg-right.svg"
 import LeftBg from "../assets/images/pg-bg-left.svg"
+import FormInformation from "../components/FormInformation"
+import Slide from 'react-reveal/Slide';
 
 const ImgRightSection = styled.section`
   background-image:  url(${RightBg});
@@ -126,6 +128,7 @@ const Oferta = ({data}) => (
             <Edition />
             <Gift mini />
           </div>
+          <Slide right>
           <div className="w-50 vertical-center align-right">
             <ImageWrapper>
             <Img fluid={data.mini.childImageSharp.fluid} />
@@ -133,12 +136,14 @@ const Oferta = ({data}) => (
             <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
+          </Slide>
         </OfferRow>
       </div>
     </ImgRightSection>
     <ImgLeftSection>
       <div className="container">
         <OfferRow className="row">
+          <Slide left>
           <div className="w-50 vertical-center align-left">
               <ImageWrapper>
               <Img fluid={data.standard.childImageSharp.fluid} />
@@ -146,6 +151,7 @@ const Oferta = ({data}) => (
               <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
               </ImageWrapper>
           </div>
+          </Slide>
           <div className="w-50">
             <OfferTitle>Strona standard</OfferTitle>
             <Price>2 000 - 5 000 zł netto</Price>
@@ -181,6 +187,7 @@ const Oferta = ({data}) => (
             <Edition editable />
             <Gift  />
           </div>
+          <Slide right>
           <div className="w-50 vertical-center align-right">
             <ImageWrapper>
             <Img fluid={data.cms.childImageSharp.fluid} />
@@ -188,9 +195,11 @@ const Oferta = ({data}) => (
             <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
+          </Slide>
         </OfferRow>
       </div>
     </ImgRightSection>
+    <FormInformation />
   </PageLayout>
 )
 

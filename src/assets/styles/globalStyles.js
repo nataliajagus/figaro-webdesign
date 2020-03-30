@@ -43,6 +43,7 @@ const GlobalStyle = createGlobalStyle `
     a {
         text-decoration: none;
         transition: 0.2s ease-in color;
+        color: #3658A4;
 
         &:hover {
             color: #3658A4;

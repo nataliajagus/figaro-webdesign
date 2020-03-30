@@ -9,6 +9,7 @@ const FooterWrapper = styled.footer`
     background: #EEEEEE;
     bottom: 0;
     width: 100%;
+
     ul {
         list-style-type: none;
     }
@@ -24,6 +25,10 @@ const FooterWrapper = styled.footer`
 
     @media (min-width: 768px) {
         padding: 100px 0;
+    }
+
+    @media(min-width: 992px) {
+        margin-top: 100px;
     }
 `;
 

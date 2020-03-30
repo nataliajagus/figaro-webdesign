@@ -27,7 +27,7 @@ const Gift = (props) => (
         { props.mini ? 
         <p>Przy zakupie tej opcji otrzymujesz rejestrację domeny oraz rok hostingu gratis. <b>Wartość gratisu: 300 zł netto</b></p> 
         : 
-        <p>Przy zakupie tej opcji otrzymujesz rejestrację domeny oraz rok hostingu gratis <b>(wartość 300 zł netto)</b>, zgłoszenie firmy do Google <b>(wartość 150 zł netto)</b> założenie profilu firmy na Facebooku <b>(wartość 200 zł netto)</b> oraz rabat 35% na zamówienie projektu logo.</p> }
+        <p>Przy zakupie tej opcji otrzymujesz rejestrację domeny oraz rok hostingu gratis <b>(wartość 300 zł netto)</b>, zgłoszenie firmy do Google <b>(wartość 150 zł netto)</b> założenie profilu firmy na Facebooku <b>(wartość 200 zł netto)</b> oraz rabat 50% na zamówienie projektu logo.</p> }
     </>
 )
 
