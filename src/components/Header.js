@@ -3,6 +3,7 @@ import styled from "styled-components";
 import DesktopMenu from "../components/DesktopMenu";
 import MobileMenu from "../components/MobileMenu";
 import Logo from '../assets/images/logo.svg';
+import { Link } from "gatsby";
 
 const HeaderWrapper = styled.header`
     display: flex;
@@ -32,7 +33,7 @@ const DesktopMenuWrapper = styled.div`
 
 const Header = () => (
     <HeaderWrapper>
-        <LogoImg src={Logo} />
+        <Link to="/"><LogoImg src={Logo} /></Link>
         <MobileMenuWrapper>
             <MobileMenu />
         </MobileMenuWrapper>

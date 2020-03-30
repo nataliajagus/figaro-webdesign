@@ -116,7 +116,7 @@ const Oferta = ({data}) => (
       <div className="container">
         <OfferRow className="row">
           <div className="w-50">
-            <OfferTitle>Strona mini</OfferTitle>
+            <OfferTitle id="mini">Strona mini</OfferTitle>
             <Price>800 - 1500 zł netto</Price>
             <p>Idealna na sam początek, kiedy chcemy przekazać jedynie podstawowe informacje i nie potrzebujemy rozbudowanych zakładek i funkcjonalności. Jest to opcja wymagająca najmniejszej inwestycji i pozwala na szybką realizację, nawet w kilka dni.</p>
             <p className="bold">Co zawiera?</p>
@@ -133,7 +133,7 @@ const Oferta = ({data}) => (
             <ImageWrapper>
             <Img fluid={data.mini.childImageSharp.fluid} />
             <Button big to="/">Zobacz przykładową realizację</Button>
-            <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
+            <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
           </Slide>
@@ -148,12 +148,12 @@ const Oferta = ({data}) => (
               <ImageWrapper>
               <Img fluid={data.standard.childImageSharp.fluid} />
               <Button big to="/">Zobacz przykładową realizację</Button>
-              <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
+              <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
               </ImageWrapper>
           </div>
           </Slide>
           <div className="w-50">
-            <OfferTitle>Strona standard</OfferTitle>
+            <OfferTitle id="standard">Strona standard</OfferTitle>
             <Price>2 000 - 5 000 zł netto</Price>
             <p>Jest to profesjonalna strona internetowa, wykonana z zgodnie z najnowszymi standardami. Prawdziwa wizytówka Twojej firmy w internecie, która zbuduje przewagę nad konkurencją.</p>
             <p className="bold">Co zawiera?</p>
@@ -173,7 +173,7 @@ const Oferta = ({data}) => (
       <div className="container">
         <OfferRow className="row">
           <div className="w-50">
-            <OfferTitle>Strona CMS (WordPress)</OfferTitle>
+            <OfferTitle id="cms">Strona CMS (WordPress)</OfferTitle>
             <Price>2 500 - 8 000 zł netto</Price>
             <p>CMS, czyli system zarządzania treścią. Twoja strona będzie posiadała prosty w obsłudze panel administracyjny, poprzez który będziesz mógł samodzielnie edytować treści na stronie, dodawać nowe zakładki, zdjęcia, pliki, galerie, prowadzić aktualności czy bloga.</p>
             <p className="bold">Co zawiera?</p>
@@ -192,7 +192,7 @@ const Oferta = ({data}) => (
             <ImageWrapper>
             <Img fluid={data.cms.childImageSharp.fluid} />
             <Button big to="/">Zobacz przykładową realizację</Button>
-            <SmallLink to="/">Co powinienieś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
+            <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
           </Slide>

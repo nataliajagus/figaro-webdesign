@@ -73,10 +73,10 @@ const Footer = () => (
                     <ColumnHeading>Oferta</ColumnHeading>
                     <nav>
                         <ul>
-                            <li><Link to="/">Strona mini</Link></li>
-                            <li><Link to="/">Strona standard</Link></li>
-                            <li><Link to="/">Strona CMS</Link></li>
-                            <li><Link to="/">Hosting i domena</Link></li>
+                            <li><Link to="/oferta#mini">Strona mini</Link></li>
+                            <li><Link to="/oferta#standard">Strona standard</Link></li>
+                            <li><Link to="/oferta#cms">Strona CMS</Link></li>
+                            <li><Link to="/pytania#domena">Hosting i domena</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -87,7 +87,7 @@ const Footer = () => (
                             <li><Link to="/">Wycena</Link></li>
                             <li><Link to="/realizacje">Realizacje</Link></li>
                             <li><Link to="/pytania">Pytania</Link></li>
-                            <li><Link to="/">Proces</Link></li>
+                            <li><Link to="/proces">Proces</Link></li>
                         </ul>
                     </nav>
                 </div>

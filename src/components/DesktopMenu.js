@@ -31,11 +31,11 @@ const MenuLink = styled(Link)`
 const DesktopMenu = ({ isIndexPage }) => ( 
     <MenuWrapper>
         <MenuList>
-            <MenuItem><MenuLink to="/">home</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/oferta">oferta</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/realizacje">realizacje</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/proces">proces</MenuLink></MenuItem>
-            <MenuItem><MenuLink to="/kontakt">kontakt</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/" activeClassName="active-link">home</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/oferta" activeClassName="active-link">oferta</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/realizacje" activeClassName="active-link">realizacje</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/proces" activeClassName="active-link">proces</MenuLink></MenuItem>
+            <MenuItem><MenuLink to="/kontakt" activeClassName="active-link">kontakt</MenuLink></MenuItem>
             <Button small to="/">wycena</Button>
         </MenuList>
     </MenuWrapper>

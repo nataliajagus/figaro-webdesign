@@ -102,6 +102,10 @@ const GlobalStyle = createGlobalStyle `
         font-weight: bold;
     }
 
+    .active-link {
+        color: #3658A4;
+    }
+
     @media (min-width: 992px) {
         .w-50 {
             width: 50%;

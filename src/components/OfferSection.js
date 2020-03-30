@@ -25,13 +25,13 @@ const OfferSection = () => (
     <section>
       <div className="container">
       <OfferCardsWrapper>
-        <OfferCard title="Strony wizytówki" image={WebsiteImg}>
+        <OfferCard title="Strony wizytówki" image={WebsiteImg} link="oferta#mini">
           Profesjonalne strony firmowe lub osobiste. Indywidualny, nowoczesny projekt graficzny, wersja na komputery, telefony i tablety. Prezentacja Twojej firmy i najważniejsze informacje na jej temat.
         </OfferCard>
-        <OfferCard title="Strony z CMS" image={WebsiteEditImg}>
+        <OfferCard title="Strony z CMS" image={WebsiteEditImg} link="oferta#cms">
           Strony internetowe z systemem zarządzania treścią, dzięki któremu możesz sam edytować zawartość swojej strony, rozbudowywać ją, dodawać zdjęcia do galerii, czy prowadzić aktualności.
         </OfferCard>
-        <OfferCard title="Domena i hosting" image={HostingImg}>
+        <OfferCard title="Domena i hosting" image={HostingImg} link="pytania#domena">
           Za naszym pośrednictwem możesz zarejestrować domenę dla swojej strony oraz wykupić miejsce na naszym serwerze, gdzie oprócz strony możesz utrzymywać również firmową pocztę.
         </OfferCard>
       </OfferCardsWrapper>
