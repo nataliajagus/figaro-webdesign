@@ -96,7 +96,7 @@ const Footer = () => (
                     <p>Figaro Corporation<br />
                     ul. Warszawska 10<br />
                     08-500 Ryki<br />
-                    NIP: 716-109-70-66</p>
+                    <Link to="/polityka">Polityka prywatności</Link></p>
                 </div>
                 <div className="w-25">
                     <ColumnHeading>Masz pytania?</ColumnHeading>
