@@ -84,7 +84,7 @@ const Footer = () => (
                     <ColumnHeading>Na skróty</ColumnHeading>
                     <nav>
                         <ul>
-                            <li><Link to="/">Wycena</Link></li>
+                            <li><Link to="/wycena">Wycena</Link></li>
                             <li><Link to="/realizacje">Realizacje</Link></li>
                             <li><Link to="/pytania">Pytania</Link></li>
                             <li><Link to="/proces">Proces</Link></li>

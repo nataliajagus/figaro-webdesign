@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import Button from "../components/Button"
+import ButtonLink from "../components/ButtonLink"
 
 const Wrapper = styled.div`
     text-align: center;
@@ -18,7 +18,7 @@ const FormInformation = () => (
         <p>
         <b>UWAGA:</b> Przed wypełnieniem formularza zapoznaj się z <Link to="/pytania">informacjami, które powinieneś wiedzieć zanim zamówisz stronę internetową!</Link>
         </p>
-        <Button big to="/">WYCENA</Button>
+        <ButtonLink big href="#">WYCENA</ButtonLink>
     </Wrapper>
 )
 

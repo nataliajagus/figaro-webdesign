@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import PageLayout from "../layouts/page"
 import SEO from "../components/seo"
-import Fade from 'react-reveal/Fade';
+import { Link } from "gatsby";
 import PageTitle from "../components/PageTitle"
 import FormInformation from "../components/FormInformation"
+import ReactTooltip from 'react-tooltip'
 
 const Step = styled.div`
   display: flex;
@@ -90,7 +91,8 @@ const Proces = () => (
         <Number>5</Number>
         <div>
           <h4>Rozliczenie i finalizacja</h4>
-          <p>Po zaakceptowaniu funkcjonującej strony przyjdzie pora na dopłacenie pozostałych 50% kwoty. <br />Po zaksięgowaniu się przelewu na naszym koncie umieszczamy stronę pod docelowym adresem, na serwerze wykupionym u nas bądź w firmie hostingującej. </p>
+          <p>Po zaakceptowaniu funkcjonującej strony przyjdzie pora na dopłacenie pozostałych 50% kwoty. <br />Po zaksięgowaniu się przelewu na naszym koncie umieszczamy stronę pod docelowym adresem, <Link to="/pytania#domena" data-tip="Zobacz co to hosting i ile kosztuje">na serwerze wykupionym u nas</Link> bądź w firmie hostingującej.</p>
+          <ReactTooltip />
         </div>
       </Step>
       <FormInformation />

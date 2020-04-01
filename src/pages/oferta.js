@@ -8,7 +8,7 @@ import Edition from "../components/Edition"
 import Gift from "../components/Gift"
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Button from "../components/Button"
+import ButtonLink from "../components/ButtonLink"
 import { Link } from "gatsby";
 import RightBg from "../assets/images/pg-bg-right.svg"
 import LeftBg from "../assets/images/pg-bg-left.svg"
@@ -132,7 +132,7 @@ const Oferta = ({data}) => (
           <div className="w-50 vertical-center align-right">
             <ImageWrapper>
             <Img fluid={data.mini.childImageSharp.fluid} />
-            <Button big to="https://postex.pl">Zobacz przykładową realizację</Button>
+            <ButtonLink big href="https://postex.pl">Zobacz przykładową realizację</ButtonLink>
             <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
@@ -147,7 +147,7 @@ const Oferta = ({data}) => (
           <div className="w-50 vertical-center align-left">
               <ImageWrapper>
               <Img fluid={data.standard.childImageSharp.fluid} />
-              <Button big to="/">Zobacz przykładową realizację</Button>
+              <ButtonLink big href="http://luxdental.com.pl">Zobacz przykładową realizację</ButtonLink>
               <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
               </ImageWrapper>
           </div>
@@ -191,7 +191,7 @@ const Oferta = ({data}) => (
           <div className="w-50 vertical-center align-right">
             <ImageWrapper>
             <Img fluid={data.cms.childImageSharp.fluid} />
-            <Button big to="/">Zobacz przykładową realizację</Button>
+            <ButtonLink big href="http://brainlight.pl">Zobacz przykładową realizację</ButtonLink>
             <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>

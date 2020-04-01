@@ -4,7 +4,7 @@ import PortfolioItem from "../components/PortfolioItem"
 import PageLayout from "../layouts/page"
 import PageTitle from "../components/PageTitle"
 import styled from "styled-components"
-
+import FormInformation from "../components/FormInformation"
 import SEO from "../components/seo"
 
 const PortfolioRow = styled.section`
@@ -27,6 +27,7 @@ const Realizacje = ({ data }) => {
         <PortfolioItem title={title} link={link} image={featuredImage.childImageSharp.fluid} type={type} />
         ))}
         </PortfolioRow>
+        <FormInformation />
       </div>  
   </PageLayout>
   )

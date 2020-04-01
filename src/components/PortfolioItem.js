@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import Button from "../components/Button"
+import ButtonLink from "../components/ButtonLink"
 import Image from "gatsby-image"
 
 
@@ -41,22 +41,7 @@ const InfoWrapper = styled.div`
         color: #3658A4;
     }
 
-    a {
-        background: #3658A4;
-        color: #fff;
-        border-radius: 30px;
-        padding: 5px 15px;
-        font-size: 0.7rem;
-        font-weight: bold;
-        transition: transform 0.2s ease-in;
-        
 
-        &:hover {
-            transform: translateX(10px);
-            color: #fff;
-            cursor: pointer !important;
-        }
-    }
 `;
 
 const PortfolioItem = ({ title, link, image, type }) => (
@@ -65,7 +50,7 @@ const PortfolioItem = ({ title, link, image, type }) => (
         <InfoWrapper>
             <span>{title}</span>
             <p>Strona {type}</p>
-            <a href={link}>Zobacz online</a>
+            <ButtonLink href={link} rel="nofollow" target="_blank">Zobacz online</ButtonLink>
         </InfoWrapper>      
     </Wrapper>
 )
