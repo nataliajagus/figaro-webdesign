@@ -132,7 +132,7 @@ const Oferta = ({data}) => (
           <div className="w-50 vertical-center align-right">
             <ImageWrapper>
             <Img fluid={data.mini.childImageSharp.fluid} />
-            <Button big to="/">Zobacz przykładową realizację</Button>
+            <Button big to="https://postex.pl">Zobacz przykładową realizację</Button>
             <SmallLink to="/pytania">Co powinieneś wiedzieć zanim zamówisz stronę internetową?</SmallLink>
             </ImageWrapper>
           </div>
